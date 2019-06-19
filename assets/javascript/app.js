@@ -21,10 +21,7 @@ $("#start").on("click", function() {
     $(this).hide();
 
     // Show timer 
-    $("#timer").html("<h2>Timer: 30 Seconds</h2>" + "<br>");
-
-    // time();
-    countdown();
+    run();
 
     // Show questions to answer 
     $("#question1").html("<h3>" + questions[0].question + "</h3>");
@@ -58,34 +55,36 @@ $("#start").on("click", function() {
 ;})
 
 // Create timer function
+let number = 25;
 
-let number = 30;
 let intervalID;
 
-function time() {
-    clearInterval(intervalID);
-    intervalID = setInterval(decrement, 1000);
+// Create function for timer to run
+function run() {
+  clearInterval(intervalID);
+  intervalID = setInterval(decrement, 1000);
 }
 
-function countdown() {
-    number--;
-
-    $("#timer").html("<h2>Time Remaining: " + number + " Seconds</h2>" + "<br>");
-
-    if (number === 0) {
-        // stop function
-        stop();
-        // tally score
-        score();
-        // display results
-        results();
-    }
-
+// Create function for time to decrease starting from 25seconds
+function decrement() {
+  number--;
+  $("#timer").html("<h2>Time Remaining: " + number + "</h2>");
+  if (number === 0) {
+    stop();
+  }
 }
 
 function stop() {
     clearInterval(intervalID);
-}
+    $("#timer").hide();
+    $("#question1").hide();
+    $("#answer1").hide();
+    $("#question2").hide();
+    $("#answer2").hide();
+    $("#question3").hide();
+    $("#answer3").hide();
+    $("#finished").html("Times Up!")
+  }
 
 
 let correctAnswer = 0;
@@ -100,13 +99,16 @@ function results() {
     $("#answer2").hide();
     $("#question3").hide();
     $("#answer3").hide();
-    $("#submit").hide();
+    $("#submit").empty();
+    $("#finished").hide();
 
     $("#message").html("<h2>Finished!</h2>");
-    $("#correct").html("Correct Answers:" + correctAnswer);
-    $("#incorrect").html("Incorrect Answers:" + incorrectAnswer);
-    $("#undefined").html("Unanswered" + unansweredQuestions);
+    $("#correct").html("Correct Answers: " + correctAnswer);
+    $("#incorrct").html("Incorrect Answers: " + incorrectAnswer);
+    $("#undefined").html("Unanswered: " + unansweredQuestions);
+
 }
+
 
 // Create score funciton to check user answer 
 function score() {
@@ -147,4 +149,20 @@ function score() {
     else {
         incorrectAnswer++;
     }
+}
+
+function reset() {
+    $("#retry").html("<button id='reset'>Retry!<button>");
+
+    $("#reset").on("click", function() {
+        $("#message").hide();
+        $("#correct").hide();
+        $("#incorrct").hide();
+        $("#undefined").hide();
+        correctAnswer = 0;
+        incorrectAnswer = 0;
+        unansweredQuestions = 0;
+        
+    })
+    
 }
