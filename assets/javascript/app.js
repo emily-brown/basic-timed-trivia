@@ -48,15 +48,6 @@ $("#start").on("click", function() {
 // Create function for submit button 
 
     $("#submit").html("<button id='done'>Done!<button>");
-
-    $("#done").on("click", function() {
-        // Funtion to tally score
-        score();
-        // Function to show results
-        results();
-
-        reset();
-    });
 ;})
 
 // }
@@ -93,6 +84,20 @@ function stop() {
     $("#finished").html("Times Up!")
   }
 
+$(".container-fluid").on("click", "#done", function(){
+    score();
+
+    results();
+
+    reset();
+    
+    $("#message").show();
+    $("#correct").show();
+    $("#incorrct").show();
+    $("#undefined").show();
+    $("#retry").show();
+
+})
 
 let correctAnswer = 0;
 let incorrectAnswer = 0;
@@ -169,6 +174,21 @@ function reset() {
         correctAnswer = 0;
         incorrectAnswer = 0;
         unansweredQuestions = 0;
+    
+        number = 25;
+        run();
+
+        $("#retry").hide();
+
+        $("#timer").show();
+        $("#question1").show();
+        $("#answer1").show();
+        $("#question2").show();
+        $("#answer2").show();
+        $("#question3").show();
+        $("#answer3").show();
+
+        $("#submit").html("<button id='done'>Done!<button>");
         
     })
     
