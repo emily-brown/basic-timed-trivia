@@ -16,6 +16,9 @@ let questions = [{
 
 // Create start button function to begin answer questions
 
+// function beginGame() {
+
+
 $("#start").on("click", function() {
     // When start button is clicked to begin game, hide it
     $(this).hide();
@@ -55,6 +58,8 @@ $("#start").on("click", function() {
         reset();
     });
 ;})
+
+// }
 
 // Create timer function
 let number = 25;
