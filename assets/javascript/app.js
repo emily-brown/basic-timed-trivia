@@ -156,7 +156,7 @@ function score() {
     let userAnswer2 = $("input[name='answer2']:checked").val();
     let userAnswer3 = $("input[name='answer3']:checked").val();
     let userAnswer4 = $("input[name='answer4']:checked").val();
-    let userAnswer5 = $("input[name='answer4']:checked").val();
+    let userAnswer5 = $("input[name='answer5']:checked").val();
 
     // Check question 1
     if (userAnswer1 === undefined) {
@@ -191,7 +191,7 @@ function score() {
         incorrectAnswer++;
     }
 
-     // Check question 3
+     // Check question 4
      if (userAnswer4 === undefined) {
         unansweredQuestions++;
     }
@@ -202,7 +202,7 @@ function score() {
         incorrectAnswer++;
     }
 
-     // Check question 3
+     // Check question 5
      if (userAnswer5 === undefined) {
         unansweredQuestions++;
     }
