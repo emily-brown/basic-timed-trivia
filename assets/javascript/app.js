@@ -162,7 +162,7 @@ function score() {
     if (userAnswer1 === undefined) {
         unansweredQuestions++;
     }
-    else if (userAnswer1 === questions[0].answer) {
+    else if (userAnswer1 == questions[0].answer) {
         correctAnswer++;
     }
     else {
@@ -173,7 +173,7 @@ function score() {
     if (userAnswer2 === undefined) {
         unansweredQuestions++;
     }
-    else if (userAnswer2 === questions[1].answer) {
+    else if (userAnswer2 == questions[1].answer) {
         correctAnswer++;
     }
     else {
@@ -184,7 +184,7 @@ function score() {
     if (userAnswer3 === undefined) {
         unansweredQuestions++;
     }
-    else if (userAnswer3 === questions[2].answer) {
+    else if (userAnswer3 == questions[2].answer) {
         correctAnswer++;
     }
     else {
@@ -195,7 +195,7 @@ function score() {
      if (userAnswer4 === undefined) {
         unansweredQuestions++;
     }
-    else if (userAnswer4 === questions[3].answer) {
+    else if (userAnswer4 == questions[3].answer) {
         correctAnswer++;
     }
     else {
@@ -206,7 +206,7 @@ function score() {
      if (userAnswer5 === undefined) {
         unansweredQuestions++;
     }
-    else if (userAnswer5 === questions[4].answer) {
+    else if (userAnswer5 == questions[4].answer) {
         correctAnswer++;
     }
     else {
