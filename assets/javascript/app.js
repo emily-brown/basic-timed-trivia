@@ -51,6 +51,8 @@ $("#start").on("click", function() {
         score();
         // Function to show results
         results();
+
+        reset();
     });
 ;})
 
