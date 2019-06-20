@@ -33,34 +33,34 @@ $("#start").on("click", function() {
 
     // Show questions to answer 
     $("#question1").html("<h3>" + questions[0].question + "</h3>");
-    $("#answer1").html("<input type='radio' name='answer1' value='0'>" + "<label>" + questions[0].options[0] + "</label>" 
-    + "<input type='radio' name='answer1' value='1'>" + "<label>" + questions[0].options[1] + "<label>" 
-    + "<input type='radio' name='answer1' value='2'>" + "<label>" + questions[0].options[2] + "<label>" 
-    + "<input type='radio' name='answer1' value='3'>" + "<label>" + questions[0].options[3] + "<label>");
+    $("#answer1").html("&nbsp<input type='radio' name='answer1' value='0'>&nbsp" + "<label>" + questions[0].options[0] + "&nbsp</label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer1' value='1'&nbsp" + "<label>" + questions[0].options[1] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer1' value='2'>&nbsp" + "<label>" + questions[0].options[2] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer1' value='3'>&nbsp" + "<label>" + questions[0].options[3] + "&nbsp<label>&nbsp");
 
     $("#question2").html("<h3>" + questions[1].question + "</h3>");
-    $("#answer2").html("<input type='radio' name='answer2' value='0'>" + "<label>" + questions[1].options[0] + "</label>" 
-    + "<input type='radio' name='answer2' value='1'>" + "<label>" + questions[1].options[1] + "<label>" 
-    + "<input type='radio' name='answer2' value='2'>" + "<label>" + questions[1].options[2] + "<label>" 
-    + "<input type='radio' name='answer2' value='3'>" + "<label>" + questions[1].options[3] + "<label>");
+    $("#answer2").html("&nbsp<input type='radio' name='answer2' value='0'>&nbsp" + "<label>" + questions[1].options[0] + "&nbsp</label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer2' value='1'>&nbsp" + "<label>" + questions[1].options[1] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer2' value='2'>&nbsp" + "<label>" + questions[1].options[2] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer2' value='3'>&nbsp" + "<label>" + questions[1].options[3] + "&nbsp<label>&nbsp");
 
     $("#question3").html("<h3>" + questions[2].question + "</h3>");
-    $("#answer3").html("<input type='radio' name='answer3' value='0'>" + "<label>" + questions[2].options[0] + "</label>" 
-    + "<input type='radio' name='answer3' value='1'>" + "<label>" + questions[2].options[1] + "<label>" 
-    + "<input type='radio' name='answer3' value='2'>" + "<label>" + questions[2].options[2] + "<label>" 
-    + "<input type='radio' name='answer3' value='3'>" + "<label>" + questions[2].options[3] + "<label>");
+    $("#answer3").html("&nbsp<input type='radio' name='answer3' value='0'>&nbsp" + "<label>" + questions[2].options[0] + "&nbsp</label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer3' value='1'>&nbsp" + "<label>" + questions[2].options[1] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer3' value='2'>&nbsp" + "<label>" + questions[2].options[2] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer3' value='3'>&nbsp" + "<label>" + questions[2].options[3] + "&nbsp<label>&nbsp");
 
     $("#question4").html("<h3>" + questions[3].question + "</h3>");
-    $("#answer4").html("<input type='radio' name='answer4' value='0'>" + "<label>" + questions[3].options[0] + "</label>" 
-    + "<input type='radio' name='answer4' value='1'>" + "<label>" + questions[3].options[1] + "<label>" 
-    + "<input type='radio' name='answer4' value='2'>" + "<label>" + questions[3].options[2] + "<label>" 
-    + "<input type='radio' name='answer4' value='3'>" + "<label>" + questions[3].options[3] + "<label>");
+    $("#answer4").html("&nbsp<input type='radio' name='answer4' value='0'>&nbsp" + "<label>" + questions[3].options[0] + "&nbsp</label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer4' value='1'>&nbsp" + "<label>" + questions[3].options[1] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer4' value='2'>&nbsp" + "<label>" + questions[3].options[2] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer4' value='3'>&nbsp" + "<label>" + questions[3].options[3] + "&nbsp<label>&nbsp");
 
     $("#question5").html("<h3>" + questions[4].question + "</h3>");
-    $("#answer5").html("<input type='radio' name='answer5' value='0'>" + "<label>" + questions[4].options[0] + "</label>" 
-    + "<input type='radio' name='answer5' value='1'>" + "<label>" + questions[4].options[1] + "<label>" 
-    + "<input type='radio' name='answer5' value='2'>" + "<label>" + questions[4].options[2] + "<label>" 
-    + "<input type='radio' name='answer5' value='3'>" + "<label>" + questions[4].options[3] + "<label>");
+    $("#answer5").html("&nbsp<input type='radio' name='answer5' value='0'>&nbsp" + "<label>" + questions[4].options[0] + "&nbsp</label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer5' value='1'>&nbsp" + "<label>" + questions[4].options[1] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer5' value='2'>&nbsp" + "<label>" + questions[4].options[2] + "&nbsp<label>&nbsp" 
+    + "&nbsp<input type='radio' name='answer5' value='3'>&nbsp" + "<label>" + questions[4].options[3] + "&nbsp<label>&nbsp");
 // Create function for submit button 
 
     $("#submit").html("<button id='done'>Show my results!<button>");
