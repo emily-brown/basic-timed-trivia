@@ -6,3 +6,15 @@
     background-size: cover;
     border-image-repeat: no-repeat;
 }
+
+.container {
+    background: lightgray;
+}
+
+.text-center {
+    color: white;
+}
+
+#title {
+    font-family: 'Monoton', cursive;
+}
