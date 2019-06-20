@@ -63,7 +63,7 @@ $("#start").on("click", function() {
     + "&nbsp<input type='radio' name='answer5' value='3'>&nbsp" + "<label>" + questions[4].options[3] + "&nbsp<label>&nbsp");
 // Create function for submit button 
 
-    $("#submit").html("<button id='done'>Show my results!<button>");
+    $("#submit").html("<button id='done'>Show my results!</button>");
 ;})
 
 // }
@@ -218,7 +218,7 @@ function score() {
 // Create reset function
 
 function reset() {
-    $("#retry").html("<button id='reset'>Play Again?<button>");
+    $("#retry").html("<button id='reset'>Play Again?</button>");
 
     $("#reset").on("click", function() {
         $("#message").hide();
@@ -247,7 +247,7 @@ function reset() {
         $("#answer5").show();
         $("#finished").show();
 
-        $("#submit").html("<button id='done'>Show my results!<button>");
+        $("#submit").html("<button id='done'>Show my results!</button>");
         
     })
     
