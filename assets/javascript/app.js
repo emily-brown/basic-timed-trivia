@@ -24,9 +24,6 @@ let questions = [{
 
 // Create start button function to begin answer questions
 
-// function beginGame() {
-
-
 $("#start").on("click", function() {
     // When start button is clicked to begin game, hide it
     $(this).hide();
@@ -91,6 +88,8 @@ function decrement() {
   }
 }
 
+// Create function so that once timer has counted down to 0, hide the questions
+
 function stop() {
     clearInterval(intervalID);
     $("#timer").hide();
@@ -121,6 +120,8 @@ $(".container-fluid").on("click", "#done", function(){
     $("#retry").show();
 
 })
+
+// Create function to show results once the user is done answering
 
 let correctAnswer = 0;
 let incorrectAnswer = 0;
@@ -213,6 +214,8 @@ function score() {
         incorrectAnswer++;
     }
 }
+
+// Create reset function
 
 function reset() {
     $("#retry").html("<button id='reset'>Play Again?<button>");
