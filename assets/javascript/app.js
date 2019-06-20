@@ -66,7 +66,7 @@ $("#start").on("click", function() {
     + "<input type='radio' name='answer5' value='3'>" + "<label>" + questions[4].options[3] + "<label>");
 // Create function for submit button 
 
-    $("#submit").html("<button id='done'>Done!<button>");
+    $("#submit").html("<button id='done'>Show my results!<button>");
 ;})
 
 // }
@@ -116,7 +116,7 @@ $(".container-fluid").on("click", "#done", function(){
     
     $("#message").show();
     $("#correct").show();
-    $("#incorrct").show();
+    $("#incorrect").show();
     $("#undefined").show();
     $("#retry").show();
 
@@ -141,9 +141,9 @@ function results() {
     $("#submit").empty();
     $("#finished").hide();
 
-    $("#message").html("<h2>Finished!</h2>");
+    $("#message").html("<h2>Let's see how you did...</h2>");
     $("#correct").html("Correct Answers: " + correctAnswer);
-    $("#incorrct").html("Incorrect Answers: " + incorrectAnswer);
+    $("#incorrect").html("Incorrect Answers: " + incorrectAnswer);
     $("#undefined").html("Unanswered: " + unansweredQuestions);
 
 }
@@ -215,12 +215,12 @@ function score() {
 }
 
 function reset() {
-    $("#retry").html("<button id='reset'>Retry!<button>");
+    $("#retry").html("<button id='reset'>Play Again?<button>");
 
     $("#reset").on("click", function() {
         $("#message").hide();
         $("#correct").hide();
-        $("#incorrct").hide();
+        $("#incorrect").hide();
         $("#undefined").hide();
         correctAnswer = 0;
         incorrectAnswer = 0;
@@ -242,8 +242,9 @@ function reset() {
         $("#answer4").show();
         $("#question5").show();
         $("#answer5").show();
+        $("#finished").show();
 
-        $("#submit").html("<button id='done'>Done!<button>");
+        $("#submit").html("<button id='done'>Show my results!<button>");
         
     })
     

@@ -7,8 +7,11 @@
     border-image-repeat: no-repeat;
 }
 
-.container {
-    background: lightgray;
+.question {
+    background: rgb(128,127,202, 0.7);
+    color: white;
+    border-radius: 25px;
+
 }
 
 .text-center {
@@ -17,4 +20,73 @@
 
 #title {
     font-family: 'Monoton', cursive;
+    color: white;
+    font-size: 46px;
+}
+
+#start {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: rgb(254,37,114, 1.0);
+        color: white;
+    }
+
+#start:hover {
+    background-color: #ff9c50;
+}
+
+#reset {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(254,37,114, 1.0);
+    color: white;
+}
+
+#reset:hover {
+background-color: #ff9c50;
+}
+
+#done {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: rgb(254,37,114, 1.0);
+    color: white;
+}
+
+#done:hover {
+background-color: #ff9c50;
+}
+
+#timer {
+    color: white;
+    background-color: rgb(254,37,114, 1.0);
+    border-radius: 25px;
+}
+
+#finished {
+    font-size: 60px;
+}
+
+#correct, #incorrect, #undefined {
+    font-size: 30px;
+}
+
+#message {
+    font-size: 60px;
+    color: white;
+    background-color: rgb(254,37,114);
+    border-radius: 25px;
+
+}
+
+.navbar-brand {
+    font-family: 'Monoton', cursive;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #012a72;
 }
