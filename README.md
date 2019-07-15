@@ -1,6 +1,6 @@
 # basic-timed-trivia
 
-### Link to Live Game:
+### Link to Live Game: https://emily-brown.github.io/basic-timed-trivia/
 
 ## Game Objective: 
 Guess 5 space themed questions in 25 seconds. 
